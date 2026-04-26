@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CuanMart | Toko Online Modern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">Urban<span>Shop</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="cart-icon" id="cartIcon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Premium Quality <span>Products</span></h1>
+      <p>Discover the best collection of high-quality products at affordable prices.</p>
+      <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+        Shop Now <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&h=400&fit=crop" alt="Shopping">
+    </div>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products">
+  <div class="container">
+    <h2 class="section-title">Our <span>Products</span></h2>
+    <p class="section-subtitle">Best selling items this week</p>
+    
+    <!-- Category Filter -->
+    <div class="category-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Bags">Bags</button>
+      <button class="filter-btn" data-filter="Clothing">Clothing</button>
+      <button class="filter-btn" data-filter="Accessories">Accessories</button>
+      <button class="filter-btn" data-filter="Electronics">Electronics</button>
+    </div>
+
+    <!-- PRODUCTS GRID - Semua produk akan tampil di sini -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Produk akan di-load oleh JavaScript -->
+      <!-- Tapi sebagai contoh, ini struktur manual nya: -->
+      
+      <!-- Contoh Product Card 1 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="assets/tas.jpg" alt="Backpack">
+          <span class="badge">HOT</span>
+        </div>
+        <div class="product-info">
+          <h3>Premium Backpack</h3>
+          <p class="category">Bags</p>
+          <div class="price">$89 <span class="old-price">$129</span></div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Contoh Product Card 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="assets/kaos.jpg" alt="T-Shirt">
+        </div>
+        <div class="product-info">
+          <h3>T-Shirt</h3>
+          <p class="category">Clothing</p>
+          <div class="price">$29 <span class="old-price">$49</span></div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Contoh Product Card 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="assets/dompet.jpg" alt="Wallet">
+        </div>
+        <div class="product-info">
+          <h3>Leather Wallet</h3>
+          <p class="category">Accessories</p>
+          <div class="price">$35 <span class="old-price">$55</span></div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Contoh Product Card 4 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="assets/air jordan.jpg" alt="Earbuds">
+        </div>
+        <div class="product-info">
+          <h3>shoe</h3>
+          <p class="category">Electronics</p>
+          <div class="price">$79 <span class="old-price">$129</span></div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Contoh Product Card 5 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="assets/jaket.jpg" alt="Jacket">
+        </div>
+        <div class="product-info">
+          <h3>Jacket</h3>
+          <p class="category">Clothing</p>
+          <div class="price">$99 <span class="old-price">$149</span></div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Contoh Product Card 6 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="assets/nct blue asean.jpg" alt="Watch">
+        </div>
+        <div class="product-info">
+          <h3>O'clock</h3>
+          <p class="category">Electronics</p>
+          <div class="price">$149 <span class="old-price">$249</span></div>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <h2>Why Choose <span>Us?</span></h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Free Shipping Worldwide</li>
+        <li><i class="fas fa-undo-alt"></i> 30 Days Return Policy</li>
+        <li><i class="fas fa-headset"></i> 24/7 Customer Support</li>
+        <li><i class="fas fa-lock"></i> Secure Payment</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=500&h=400&fit=crop" alt="About">
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact <span>Us</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> Bogor, Indonesia</p>
+        <p><i class="fas fa-phone"></i> +62 88212638783</p>
+        <p><i class="fas fa-envelope"></i> CuanMart@gmail.com</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 CuanMart. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Cart Sidebar -->
+<div class="cart-overlay" id="cartOverlay">
+  <div class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span id="cartTotal">$0</span></div>
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
